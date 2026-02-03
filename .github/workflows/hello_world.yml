@@ -1,9 +1,10 @@
 name: Hello World
 
-on: push
+on: workflow_dispatch
 
 jobs:
-  hello:
+  helloWorld:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!"
+      - name: Run a one-line script
+        run: echo "Hello World!"
